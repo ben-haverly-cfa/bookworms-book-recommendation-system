@@ -1,7 +1,6 @@
-# bookworms-book-recommendation-system
-Transparent book recommendation system using TF-IDF, LDA, NMF, DuckDB, and Tableau
-
 # Bookworms Book Recommendation System
+
+Short description: Transparent book recommendation system using TF-IDF, LDA, NMF, DuckDB, and Tableau
 
 This repository contains my portfolio version of a book recommendation project focused on transparency, topic modeling, and interactive visualization. The goal of the project was to build a recommendation system that helps users understand why books are recommended while allowing them to explore recommendations based on ratings, themes, and text similarity.
 
