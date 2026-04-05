@@ -1,0 +1,25 @@
+=== diversity_at_k k=10 2026-04-05T02:08:50Z ===
+=== v_recs_equal  (table rows 24,938,800) ===
+  k=10  sample_seeds=all
+  seeds: 498,776
+  consecutive_genre_distance  mean=0.911460  median=0.937956
+  author_distinct_ratio       mean=0.920224  median=1.000000
+
+=== v_recs_lda  (table rows 24,938,800) ===
+  k=10  sample_seeds=all
+  seeds: 498,776
+  consecutive_genre_distance  mean=0.913974  median=0.937500
+  author_distinct_ratio       mean=0.926593  median=1.000000
+
+=== v_recs_nmf  (table rows 24,938,800) ===
+  k=10  sample_seeds=all
+  seeds: 498,776
+  consecutive_genre_distance  mean=0.929900  median=0.953259
+  author_distinct_ratio       mean=0.943580  median=1.000000
+
+=== v_recs_tfidf  (table rows 24,938,800) ===
+  k=10  sample_seeds=all
+  seeds: 498,776
+  consecutive_genre_distance  mean=0.921664  median=0.953085
+  author_distinct_ratio       mean=0.894576  median=1.000000
+
