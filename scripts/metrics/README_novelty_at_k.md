@@ -2,7 +2,7 @@
 
 ## What this measures
 
-**Novelty** (without user click data) is approximated from **how niche each recommended work is in the global catalog**. For every neighbor in positions 1…k, we attach a **popularity profile** from `v_works`, then average within each source list and report **mean / median over sources**.
+**Novelty** (without user click data) is approximated from **how niche each recommended work is in the global catalog**. For every neighbor in positions 1…k, we attach a **popularity profile** from `v_works`, then average within each source list and report **means over sources**.
 
 ### Primary: rarity score (higher = more novel / more tail)
 

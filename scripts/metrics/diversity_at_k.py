@@ -99,9 +99,7 @@ def query(view: str, k: int, sample_seeds: int) -> str:
         SELECT
             COUNT(*)::BIGINT AS n_seeds,
             AVG(consec_div) AS mean_consecutive_genre_distance,
-            quantile_cont(consec_div, 0.5) AS median_consecutive_genre_distance,
-            AVG(author_distinct_ratio) AS mean_author_distinct_ratio,
-            quantile_cont(author_distinct_ratio, 0.5) AS median_author_distinct_ratio
+            AVG(author_distinct_ratio) AS mean_author_distinct_ratio
         FROM merged
         ;
     """
@@ -121,10 +119,10 @@ def run(con: duckdb.DuckDBPyConnection, view: str, args: argparse.Namespace) -> 
     print(f"=== {view}  (table rows {n:,}) ===")
     print(f"  k={args.k}  sample_seeds={args.sample_seeds or 'all'}")
     if r:
-        ns, m_cgd, med_cgd, m_adr, med_adr = r
+        ns, m_cgd, m_adr = r
         print(f"  seeds: {ns:,}")
-        print(f"  consecutive_genre_distance  mean={m_cgd:.6f}  median={med_cgd:.6f}")
-        print(f"  author_distinct_ratio       mean={m_adr:.6f}  median={med_adr:.6f}")
+        print(f"  consecutive_genre_distance  mean={m_cgd:.6f}")
+        print(f"  author_distinct_ratio       mean={m_adr:.6f}")
     print()
 
 

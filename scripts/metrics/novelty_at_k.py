@@ -79,9 +79,7 @@ def query(view: str, k: int, sample_seeds: int) -> str:
         SELECT
             COUNT(*)::BIGINT AS n_seeds,
             AVG(mean_rarity) AS mean_novelty_rarity,
-            quantile_cont(mean_rarity, 0.5) AS median_novelty_rarity,
-            AVG(mean_log_pop) AS mean_log_popularity,
-            quantile_cont(mean_log_pop, 0.5) AS median_log_popularity
+            AVG(mean_log_pop) AS mean_log_popularity
         FROM per_seed
         ;
     """
@@ -101,10 +99,10 @@ def run(con: duckdb.DuckDBPyConnection, view: str, args: argparse.Namespace) -> 
     print(f"=== {view}  (table rows {n:,}) ===")
     print(f"  k={args.k}  sample_seeds={args.sample_seeds or 'all'}")
     if r:
-        ns, m_nr, med_nr, m_lp, med_lp = r
+        ns, m_nr, m_lp = r
         print(f"  seeds: {ns:,}")
-        print(f"  novelty_rarity (higher=more tail)     mean={m_nr:.6f}  median={med_nr:.6f}")
-        print(f"  mean_log_popularity (lower=more tail) mean={m_lp:.6f}  median={med_lp:.6f}")
+        print(f"  novelty_rarity (higher=more tail)     mean={m_nr:.6f}")
+        print(f"  mean_log_popularity (lower=more tail) mean={m_lp:.6f}")
     print()
 
 

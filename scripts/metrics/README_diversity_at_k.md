@@ -2,7 +2,7 @@
 
 ## What this measures
 
-For each source work, we look at the **top-k recommended neighbors only** (not the seed). **Diversity** here means “how different those neighbors are from **each other**,” aggregated over all sources (mean and median).
+For each source work, we look at the **top-k recommended neighbors only** (not the seed). **Diversity** here means “how different those neighbors are from **each other**,” aggregated over all sources (**mean** per metric).
 
 We report two complementary signals:
 

@@ -1,25 +1,20 @@
-=== precision_at_k genre_overlap k=10 2026-04-05T02:08:41Z ===
 === v_recs_equal  (table rows 24,938,800) ===
-  k=10  mode=genre_overlap  sample_seeds=all
+  k=10  sample_seeds=all
   seeds: 498,776  lists_with_fewer_than_k: 0
   mean_precision@10: 0.489818
-  median_precision@10: 0.600000
 
 === v_recs_lda  (table rows 24,938,800) ===
-  k=10  mode=genre_overlap  sample_seeds=all
+  k=10  sample_seeds=all
   seeds: 498,776  lists_with_fewer_than_k: 0
   mean_precision@10: 0.486126
-  median_precision@10: 0.600000
 
 === v_recs_nmf  (table rows 24,938,800) ===
-  k=10  mode=genre_overlap  sample_seeds=all
+  k=10  sample_seeds=all
   seeds: 498,776  lists_with_fewer_than_k: 0
   mean_precision@10: 0.445050
-  median_precision@10: 0.500000
 
 === v_recs_tfidf  (table rows 24,938,800) ===
-  k=10  mode=genre_overlap  sample_seeds=all
+  k=10  sample_seeds=all
   seeds: 498,776  lists_with_fewer_than_k: 0
   mean_precision@10: 0.419898
-  median_precision@10: 0.400000
 

@@ -1,25 +1,24 @@
-=== novelty_at_k k=10 2026-04-05T02:09:17Z ===
 === v_recs_equal  (table rows 24,938,800) ===
   k=10  sample_seeds=all
   seeds: 498,776
-  novelty_rarity (higher=more tail)     mean=0.497163  median=0.487374
-  mean_log_popularity (lower=more tail) mean=4.647811  median=4.655304
+  novelty_rarity (higher=more tail)     mean=0.497163
+  mean_log_popularity (lower=more tail) mean=4.647811
 
 === v_recs_lda  (table rows 24,938,800) ===
   k=10  sample_seeds=all
   seeds: 498,776
-  novelty_rarity (higher=more tail)     mean=0.498823  median=0.487256
-  mean_log_popularity (lower=more tail) mean=4.633850  median=4.657166
+  novelty_rarity (higher=more tail)     mean=0.498823
+  mean_log_popularity (lower=more tail) mean=4.633850
 
 === v_recs_nmf  (table rows 24,938,800) ===
   k=10  sample_seeds=all
   seeds: 498,776
-  novelty_rarity (higher=more tail)     mean=0.505806  median=0.499664
-  mean_log_popularity (lower=more tail) mean=4.581715  median=4.571513
+  novelty_rarity (higher=more tail)     mean=0.505806
+  mean_log_popularity (lower=more tail) mean=4.581715
 
 === v_recs_tfidf  (table rows 24,938,800) ===
   k=10  sample_seeds=all
   seeds: 498,776
-  novelty_rarity (higher=more tail)     mean=0.511033  median=0.509129
-  mean_log_popularity (lower=more tail) mean=4.536704  median=4.491832
+  novelty_rarity (higher=more tail)     mean=0.511033
+  mean_log_popularity (lower=more tail) mean=4.536704
 
